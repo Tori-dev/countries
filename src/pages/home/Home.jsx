@@ -125,7 +125,7 @@ useEffect(() => {
       </Form>
       {error ? (
         <ErrorMessage>
-          <TbError404 />
+          <TbError404 style={{fontSize: 100}} />
           Error Fetching Countries <br /> Please refresh or try again...
         </ErrorMessage>
       ) : loading ? (

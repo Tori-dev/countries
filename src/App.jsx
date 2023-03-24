@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Details from "./pages/details/Detail";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // LIGHT THEME COLOURS
 const lightTheme = {
@@ -38,6 +39,7 @@ function App() {
         <Route path={`/Details/` }element={<Details setTheme={setTheme} theme={theme} />}/>
       </Routes>
       </BrowserRouter>
+      <Footer />
     </ThemeProvider>
   );
 }

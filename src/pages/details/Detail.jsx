@@ -110,7 +110,7 @@ const Detail = ({ theme, setTheme }) => {
   const { details: detail, loading, error, setError } = useResultContext();
   const navigate = useNavigate();
 
-  console.log(detail);
+  // console.log(detail);
 
   let languages = [];
   let currencies = [];
@@ -206,12 +206,12 @@ const Detail = ({ theme, setTheme }) => {
               </DetailContainer>
             </Details>
             <DetailWrapper>
-      <DetailTitle>Border Countries:</DetailTitle>
+      {/* <DetailTitle>Border Countries:</DetailTitle>
       {detail?.borders.map((border, index) => (
         <DetailDesc key={index}>
           <Button>{border}</Button>
         </DetailDesc>
-      ))}
+      ))} */}
     </DetailWrapper>
           </Wrapper>
         </Container>
